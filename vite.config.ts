@@ -63,9 +63,9 @@ export default defineConfig(() => {
               enforce: 'pre',
               transformIndexHtml(html) {
                 const scripts = `
-<script src="https://cdn.staticfile.org/vue/vue.global.prod.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.staticfile.org/vue/vue-router.global.prod.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.staticfile.org/vue/axios.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.staticfile.org/vue/3.5.22/vue.global.prod.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.staticfile.org/vue/3.5.22/vue-router.global.prod.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.staticfile.org/vue/3.5.22/axios.min.js" crossorigin="anonymous"></script>
 `
                 return html.replace('<head>', `<head>${scripts}`)
               },
